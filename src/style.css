@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    /* --------------- */
+     background-color: rgb(73, 21, 122);    /*LIGHT MODE*/
+    /* background-color: black;                  /* DARK MODE*/
+   /* color: aliceblue;  */
+    /* --------------- */
+    padding: 20px;
+}
+
+main{
+    padding: 36px;
+    /* background-color: black;
+    color: aliceblue;  */
+
+}
+
+
+.form{
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px
+}
+.form--input{
+    border-radius: 5px;
+}
+button{
+    display: grid;
+    grid-column: 1/-1;
+    background-color: blueviolet;
+    cursor: pointer;
+    align-items: center;
+
+}
+.meme-image{
+    width: 100%;
+    position: relative;
+    z-index: -10;
+   
+}
+.meme-topText{
+    padding-left: 150px;
+    padding-top: 0px;
+    position:absolute;
+    z-index: +10;
+    font-size: 30px;
+    color: black;
+}
+.meme-bottomText{
+    display: flex;
+    padding-left: 150px;
+    padding-top: 250px;
+    justify-content: center;
+    position:absolute;
+    font-size: 30px;
+    z-index: +10;
+}
